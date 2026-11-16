@@ -1,0 +1,70 @@
+query_id,template_id,pattern_family,cypher,parameters_json,actual_cardinality,neo4j_estimate,estimate_operator
+q0001,T1a_1edge_unfiltered,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) RETURN u, r, m",{},100004,100004.0,Filter
+q0002,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 0.5}",1101,5000.200000000001,Filter
+q0003,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 1.0}",3326,5000.200000000001,Filter
+q0004,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 1.5}",1687,5000.200000000001,Filter
+q0005,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 2.0}",7271,5000.200000000001,Filter
+q0006,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 2.5}",4449,5000.200000000001,Filter
+q0007,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 3.0}",20064,5000.200000000001,Filter
+q0008,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 3.5}",10538,5000.200000000001,Filter
+q0009,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 4.0}",28750,5000.200000000001,Filter
+q0010,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 4.5}",7723,5000.200000000001,Filter
+q0011,T1b_1edge_rating_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 5.0}",15095,5000.200000000001,Filter
+q0012,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 1.0}",98903,40001.600000000006,Filter
+q0013,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 1.5}",95577,40001.600000000006,Filter
+q0014,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 2.0}",93890,40001.600000000006,Filter
+q0015,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 2.5}",86619,40001.600000000006,Filter
+q0016,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 3.0}",82170,40001.600000000006,Filter
+q0017,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 3.5}",62106,40001.600000000006,Filter
+q0018,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 4.0}",51568,40001.600000000006,Filter
+q0019,T1c_1edge_rating_ge,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $v RETURN u, r, m","{""v"": 4.5}",22818,40001.600000000006,Filter
+q0020,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 1.0}",4427,40001.600000000006,Filter
+q0021,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 1.5}",6114,40001.600000000006,Filter
+q0022,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 2.0}",13385,40001.600000000006,Filter
+q0023,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 2.5}",17834,40001.600000000006,Filter
+q0024,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 3.0}",37898,40001.600000000006,Filter
+q0025,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 3.5}",48436,40001.600000000006,Filter
+q0026,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 4.0}",77186,40001.600000000006,Filter
+q0027,T1d_1edge_rating_le,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` <= $v RETURN u, r, m","{""v"": 4.5}",84909,40001.600000000006,Filter
+q0028,T1e_1edge_rating_between,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $lo AND r.`rating` <= $hi RETURN u, r, m","{""hi"": 2.5, ""lo"": 1.5}",13407,25001.0,Filter
+q0029,T1e_1edge_rating_between,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $lo AND r.`rating` <= $hi RETURN u, r, m","{""hi"": 5.0, ""lo"": 2.5}",86619,25001.0,Filter
+q0030,T1e_1edge_rating_between,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` >= $lo AND r.`rating` <= $hi RETURN u, r, m","{""hi"": 1.5, ""lo"": 0.5}",6114,25001.0,Filter
+q0031,T1f_1edge_zero_eq,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` = $v RETURN u, r, m","{""v"": 6.0}",0,5000.200000000001,Filter
+q0032,T1g_1edge_zero_gt,1-edge,"MATCH (u:User)-[r:RATED]->(m:Movie) WHERE r.`rating` > $v RETURN u, r, m","{""v"": 6.0}",0,30001.199999999997,Filter
+q0033,T2a_2edge_corate_unfiltered,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 RETURN m1, r1, u, r2, m2",{},50626472,13279750.840918034,Filter
+q0034,T2b_2edge_corate_first_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 1.0}",49974153,5311900.336367214,Filter
+q0035,T2b_2edge_corate_first_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 1.5}",47829176,5311900.336367214,Filter
+q0036,T2b_2edge_corate_first_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 2.0}",46499109,5311900.336367214,Filter
+q0037,T2b_2edge_corate_first_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 2.5}",41870846,5311900.336367214,Filter
+q0038,T2b_2edge_corate_first_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 3.0}",38695256,5311900.336367214,Filter
+q0039,T2c_2edge_corate_second_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r2.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 1.0}",49974153,5311900.336367214,Filter
+q0040,T2c_2edge_corate_second_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r2.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 1.5}",47829176,5311900.336367214,Filter
+q0041,T2c_2edge_corate_second_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r2.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 2.0}",46499109,5311900.336367214,Filter
+q0042,T2c_2edge_corate_second_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r2.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 2.5}",41870846,5311900.336367214,Filter
+q0043,T2c_2edge_corate_second_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r2.`rating` >= $v RETURN m1, r1, u, r2, m2","{""v"": 3.0}",38695256,5311900.336367214,Filter
+q0044,T2d_2edge_corate_both_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v AND r2.`rating` >= $w RETURN m1, r1, u, r2, m2","{""v"": 1.0, ""w"": 1.5}",47242754,2124760.1345468857,Filter
+q0045,T2d_2edge_corate_both_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v AND r2.`rating` >= $w RETURN m1, r1, u, r2, m2","{""v"": 1.5, ""w"": 1.0}",47242754,2124760.1345468857,Filter
+q0046,T2d_2edge_corate_both_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v AND r2.`rating` >= $w RETURN m1, r1, u, r2, m2","{""v"": 2.0, ""w"": 3.0}",35981234,2124760.1345468857,Filter
+q0047,T2d_2edge_corate_both_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v AND r2.`rating` >= $w RETURN m1, r1, u, r2, m2","{""v"": 2.5, ""w"": 2.5}",35204656,2124760.1345468857,Filter
+q0048,T2d_2edge_corate_both_ge,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` >= $v AND r2.`rating` >= $w RETURN m1, r1, u, r2, m2","{""v"": 3.0, ""w"": 2.5}",32693392,2124760.1345468857,Filter
+q0049,T2e_2edge_corate_zero,2-edge,"MATCH (m1:Movie)<-[r1:RATED]-(u:User)-[r2:RATED]->(m2:Movie) WHERE m1 <> m2 AND r1.`rating` = $v RETURN m1, r1, u, r2, m2","{""v"": 6.0}",0,663987.5420459018,Filter
+q0050,T2f_2edge_genre_unfiltered,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) RETURN u, r, m, g",{},265517,222913.02575342465,Filter
+q0051,T2g_2edge_genre_rating_ge,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` >= $v RETURN u, r, m, g","{""v"": 1.0}",262572,89165.21030136987,Filter
+q0052,T2g_2edge_genre_rating_ge,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` >= $v RETURN u, r, m, g","{""v"": 1.5}",254172,89165.21030136987,Filter
+q0053,T2g_2edge_genre_rating_ge,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` >= $v RETURN u, r, m, g","{""v"": 2.0}",249583,89165.21030136987,Filter
+q0054,T2g_2edge_genre_rating_ge,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` >= $v RETURN u, r, m, g","{""v"": 2.5}",230827,89165.21030136987,Filter
+q0055,T2g_2edge_genre_rating_ge,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` >= $v RETURN u, r, m, g","{""v"": 3.0}",218530,89165.21030136987,Filter
+q0056,T2h_2edge_genre_zero,2-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre) WHERE r.`rating` = $v RETURN u, r, m, g","{""v"": 6.0}",0,11145.651287671233,Filter
+q0057,T3a_3edge_chain_unfiltered,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 RETURN u, r, m, g, m2",{},521421586,201991969.5473885,Filter
+q0058,T3b_3edge_chain_rating_ge,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` >= $v RETURN u, r, m, g, m2","{""v"": 1.0}",516107837,80796787.8189554,Filter
+q0059,T3b_3edge_chain_rating_ge,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` >= $v RETURN u, r, m, g, m2","{""v"": 1.5}",499860235,80796787.8189554,Filter
+q0060,T3b_3edge_chain_rating_ge,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` >= $v RETURN u, r, m, g, m2","{""v"": 2.0}",491315443,80796787.8189554,Filter
+q0061,T3b_3edge_chain_rating_ge,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` >= $v RETURN u, r, m, g, m2","{""v"": 2.5}",454680107,80796787.8189554,Filter
+q0062,T3b_3edge_chain_rating_ge,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` >= $v RETURN u, r, m, g, m2","{""v"": 3.0}",431470349,80796787.8189554,Filter
+q0063,T3c_3edge_chain_zero,3-edge,"MATCH (u:User)-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(m2:Movie) WHERE m <> m2 AND r.`rating` = $v RETURN u, r, m, g, m2","{""v"": 6.0}",0,10099598.477369426,Filter
+q0064,T3d_3edge_star_unfiltered,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 RETURN m, r1, u1, r2, u2, g",{},18305124,2176695.3486744026,Filter
+q0065,T3e_3edge_star_both_ge,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 AND r1.`rating` >= $v AND r2.`rating` >= $v RETURN m, r1, u1, r2, u2, g","{""v"": 1.0}",18034032,348271.2557879045,Filter
+q0066,T3e_3edge_star_both_ge,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 AND r1.`rating` >= $v AND r2.`rating` >= $v RETURN m, r1, u1, r2, u2, g","{""v"": 1.5}",17309716,348271.2557879045,Filter
+q0067,T3e_3edge_star_both_ge,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 AND r1.`rating` >= $v AND r2.`rating` >= $v RETURN m, r1, u1, r2, u2, g","{""v"": 2.0}",16930416,348271.2557879045,Filter
+q0068,T3e_3edge_star_both_ge,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 AND r1.`rating` >= $v AND r2.`rating` >= $v RETURN m, r1, u1, r2, u2, g","{""v"": 2.5}",15280872,348271.2557879045,Filter
+q0069,T3f_3edge_star_zero,3-edge,"MATCH (m:Movie)<-[r1:RATED]-(u1:User),       (m)<-[r2:RATED]-(u2:User),       (m)-[:IN_GENRE]->(g:Genre) WHERE u1 <> u2 AND r1.`rating` = $v RETURN m, r1, u1, r2, u2, g","{""v"": 6.0}",0,108834.76743372013,Filter

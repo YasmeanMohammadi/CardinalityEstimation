@@ -1,0 +1,98 @@
+{
+  "neo4j_name": "Neo4j Kernel",
+  "neo4j_version": "2026.05.0",
+  "neo4j_edition": "enterprise",
+  "database": "recommendations",
+  "node_count": 28866,
+  "relationship_count": 166262,
+  "labels": [
+    "Movie",
+    "Genre",
+    "User",
+    "Actor",
+    "Director",
+    "Person",
+    "_Bloom_Perspective_",
+    "_Bloom_Scene_"
+  ],
+  "relationship_types": [
+    "IN_GENRE",
+    "RATED",
+    "ACTED_IN",
+    "DIRECTED",
+    "_Bloom_HAS_SCENE_"
+  ],
+  "label_frequencies": {
+    "Movie": 9125,
+    "Genre": 20,
+    "User": 671,
+    "Actor": 15443,
+    "Director": 4091,
+    "Person": 19047,
+    "_Bloom_Perspective_": 1,
+    "_Bloom_Scene_": 1
+  },
+  "relationship_frequencies": {
+    "IN_GENRE": 20340,
+    "RATED": 100004,
+    "ACTED_IN": 35910,
+    "DIRECTED": 10007,
+    "_Bloom_HAS_SCENE_": 1
+  },
+  "rated_property_keysets": [
+    {
+      "relationship_properties": [
+        "rating",
+        "timestamp"
+      ],
+      "frequency": 100004
+    }
+  ],
+  "rated_property_frequencies": {
+    "rating": 100004,
+    "timestamp": 100004
+  },
+  "rated_property": "rating",
+  "rated_value_distribution": [
+    {
+      "value": 4.0,
+      "frequency": 28750
+    },
+    {
+      "value": 3.0,
+      "frequency": 20064
+    },
+    {
+      "value": 5.0,
+      "frequency": 15095
+    },
+    {
+      "value": 3.5,
+      "frequency": 10538
+    },
+    {
+      "value": 4.5,
+      "frequency": 7723
+    },
+    {
+      "value": 2.0,
+      "frequency": 7271
+    },
+    {
+      "value": 2.5,
+      "frequency": 4449
+    },
+    {
+      "value": 1.0,
+      "frequency": 3326
+    },
+    {
+      "value": 1.5,
+      "frequency": 1687
+    },
+    {
+      "value": 0.5,
+      "frequency": 1101
+    }
+  ]
+}

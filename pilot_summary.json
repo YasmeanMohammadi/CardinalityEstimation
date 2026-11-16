@@ -1,0 +1,34 @@
+{
+  "total_queries": 69,
+  "total_templates": 21,
+  "zero_result_queries": 6,
+  "by_family": {
+    "1-edge": {
+      "queries": 32,
+      "templates": 7,
+      "zero_results": 2
+    },
+    "2-edge": {
+      "queries": 24,
+      "templates": 8,
+      "zero_results": 2
+    },
+    "3-edge": {
+      "queries": 13,
+      "templates": 6,
+      "zero_results": 2
+    }
+  },
+  "cardinality_distribution": {
+    "min": 0,
+    "p50_median": 98903,
+    "p90": 50104616.800000004,
+    "max": 521421586
+  },
+  "neo4j_q_error": {
+    "count": 69,
+    "median": 4.538294010889293,
+    "p90": 50.11763041679015,
+    "max": 10099599.477369426
+  }
+}
